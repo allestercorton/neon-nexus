@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Icons } from '@/components/Icons';
+import blockchainVideo from '@/assets/blockchain.mp4';
 
 const HeroSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -74,7 +75,7 @@ const HeroSection = () => {
             <div className='relative aspect-[16/9] w-full bg-gradient-to-br from-black via-purple-950/40 to-black'>
               <div className='absolute inset-0 flex items-center justify-center'>
                 <video
-                  src='/blockchain.mp4'
+                  src={blockchainVideo}
                   autoPlay
                   loop
                   muted
