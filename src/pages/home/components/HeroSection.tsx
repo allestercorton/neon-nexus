@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Icons } from '@/components/Icons';
-import blockchainVideo from '@/assets/blockchain.mp4';
 
 const HeroSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -74,13 +73,11 @@ const HeroSection = () => {
           <div className='relative overflow-hidden rounded-xl border border-purple-500/20 bg-black/40 backdrop-blur-sm'>
             <div className='relative aspect-[16/9] w-full bg-gradient-to-br from-black via-purple-950/40 to-black'>
               <div className='absolute inset-0 flex items-center justify-center'>
-                <video
-                  src={blockchainVideo}
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                  className='h-full w-full object-cover opacity-90'
+                <img
+                  src='https://images.unsplash.com/photo-1694219782948-afcab5c095d3?auto=compress&cs=tinysrgb&w=1080'
+                  alt='Blockchain'
+                  className='h-full w-full object-cover'
+                  loading='lazy'
                 />
                 <div className='absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/40'></div>
               </div>
